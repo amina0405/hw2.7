@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/hw27/app/src/main/res/drawable/background.xml" value="0.2265" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/hw27/app/src/main/res/drawable/ic_arrow.xml" value="0.2265" />
         <entry key="..\:/Users/User/AndroidStudioProjects/hw27/app/src/main/res/layout/activity_main.xml" value="0.18432971014492755" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/hw27/app/src/main/res/layout/activity_second.xml" value="0.22826086956521738" />
       </map>
     </option>
   </component>

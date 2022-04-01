@@ -2,8 +2,10 @@ package com.example.hw27;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -11,12 +13,23 @@ public class MainActivity extends AppCompatActivity {
     private Integer first, second;
     private Boolean isOperationClick;
     private String operation;
+    private Button btn_next;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         tvResult = findViewById(R.id.tv_result);
-
+        btn_next = findViewById(R.id.btn_next);
+        btn_next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                String result = tvResult.getText().toString();
+                intent.putExtra("result", result);
+                startActivity(intent);
+            }
+        });
     }
 
     public void onNumberClick(View view) {
